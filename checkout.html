@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details | ShopMate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div class="logo">ShopMate</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="cart-icon">
+        <i class="fa fa-shopping-cart"></i> <span id="cartCount">0</span>
+    </div>	
+</nav>
+
+
+<section class="checkout-page">
+    <h1>Checkout</h1>
+    <form id="checkoutForm">
+        <div class="billing">
+            <label>Name</label>
+            <input type="text" required>
+            <label>Email</label>
+            <input type="email" required>
+            <label>Address</label>
+            <textarea required></textarea>
+        </div>
+        <div class="payment">
+            <label>Payment Method</label>
+            <select required>
+                <option>Credit Card</option>
+                <option>PayPal</option>
+                <option>Cash on Delivery</option>
+            </select>
+        </div>
+        <button type="submit" class="btn">Place Order</button>
+    </form>
+</section>
+</body>
+</html>

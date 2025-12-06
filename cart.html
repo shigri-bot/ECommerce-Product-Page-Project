@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details | ShopMate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">ShopMate</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="cart-icon">
+        <i class="fa fa-shopping-cart"></i> <span id="cartCount">0</span>
+    </div>	
+</nav>
+
+
+<section class="cart-page">
+    <h1>Your Shopping Cart</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th><th>Price</th><th>Qty</th><th>Total</th><th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cartTableBody">
+            <!-- JS populates this -->
+        </tbody>
+    </table>
+    <div class="cart-summary">
+        <p>Subtotal: $<span id="subtotal">0.00</span></p>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button class="btn">Proceed to Checkout</button>
+    </div>
+</section>
+
+</body>
+</html>
